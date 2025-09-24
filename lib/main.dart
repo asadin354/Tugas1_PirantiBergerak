@@ -14,7 +14,13 @@ class ProfilApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Profil Diri',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF001F54), // Navy
+          foregroundColor: Colors.white,
+        ),
+      ),
       home: const ProfilPage(),
     );
   }
@@ -46,7 +52,7 @@ class ProfilPage extends StatelessWidget {
                 // Foto profil
                 const CircleAvatar(
                   radius: 60,
-                  backgroundImage: AssetImage("assets/images/profile.jpg"),
+                  backgroundImage: AssetImage("assets/images/profile.jpeg"),
                 ),
                 const SizedBox(height: 20),
 
@@ -71,20 +77,45 @@ class ProfilPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
 
+                const SizedBox(height: 8),
+
+                // NIM
+                const Text(
+                  "NIM: 2309106061",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black54,
+                  ),
+                ),
+
                 const Divider(height: 30, thickness: 1),
 
                 // Email
-                ListTile(
-                  leading: const Icon(Icons.email, color: Colors.blue),
-                  title: const Text("Email"),
-                  subtitle: const Text("asadinnurmuhammad@gmail.com"),
+                const ListTile(
+                  leading: Icon(Icons.email, color: Colors.pink),
+                  title: Text("Email"),
+                  subtitle: Text("asadinnurmuhammad@gmail.com"),
                 ),
 
-                // No. HP
-                ListTile(
-                  leading: const Icon(Icons.phone, color: Colors.green),
-                  title: const Text("Kontak"),
-                  subtitle: const Text("+62 812-3456-7890"),
+                // Instagram
+                const ListTile(
+                  leading: Icon(Icons.camera_alt, color: Colors.purple),
+                  title: Text("Instagram"),
+                  subtitle: Text("@mhmd_asadinnur"),
+                ),
+
+                // GitHub
+                const ListTile(
+                  leading: Icon(Icons.code, color: Colors.black),
+                  title: Text("GitHub"),
+                  subtitle: Text("github.com/asadin354"),
+                ),
+
+                // WhatsApp
+                const ListTile(
+                  leading: Icon(Icons.chat, color: Colors.green),
+                  title: Text("WhatsApp"),
+                  subtitle: Text("+62 857-5176-4005"),
                 ),
               ],
             ),
