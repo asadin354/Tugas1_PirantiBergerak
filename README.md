@@ -1,16 +1,3 @@
-# demo_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Nama  : Muhammad Asadin Nur
+NIM   : 2309106061
+<img width="1919" height="1128" alt="image" src="https://github.com/user-attachments/assets/5f2086df-c623-4b62-bd3d-7ecbc9e28e17" />
